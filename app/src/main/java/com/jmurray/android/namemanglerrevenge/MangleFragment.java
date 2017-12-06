@@ -20,7 +20,7 @@ public class MangleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         FragmentMangleBinding binding = DataBindingUtil.inflate(inflater, R.layout.fragment_mangle, container, false);
-        binding.setViewModel(new NameViewModel(getArguments().getString("firstName"), getArguments().getBoolean("isNice")));
+        binding.setViewModel(new NameViewModel(getArguments().getString("firstName"), getArguments().getBoolean("isNice"), getActivity()));
 
         return binding.getRoot();
     }
