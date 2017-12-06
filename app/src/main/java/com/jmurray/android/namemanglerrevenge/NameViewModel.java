@@ -1,12 +1,13 @@
 package com.jmurray.android.namemanglerrevenge;
 
-import android.widget.TextView;
+import android.databinding.BaseObservable;
+import android.view.View;
 
 /**
  * Created by joshua on 12/5/2017.
  */
 
-public class NameViewModel {
+public class NameViewModel extends BaseObservable{
     private NameMangler mNM;
     private String mName;
     private boolean mIsNice;
@@ -19,6 +20,16 @@ public class NameViewModel {
 
     public String getMangledName() {
         return mNM.getMangleFullName(mIsNice);
+    }
+
+    public String handleMangleClick() {
+        notifyChange();
+        return "OK";
+    }
+
+    public String handleResetClick() {
+//        call finish() here
+        return "OK";
     }
 
 }

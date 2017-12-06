@@ -11,11 +11,9 @@ public class NameMangler {
     private static String[] mRudeNames;
     private String mMangleName;
     private String mFirstName;
-//    private boolean mIsNice;
 
     public NameMangler(String name) {
         mFirstName = name;
-//        mIsNice = isNice;
         mNiceNames = new String[]{"Magnificent", "Awesome", "Special", "Splendid","Majestic"};
         mRudeNames = new String[]{"Arseface", "Moron", "Fool", "Imbecile","Nincompoop"};
     }
