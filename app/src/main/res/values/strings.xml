@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NameManglerRevenge</string>
+    <string name="no_first_name">Must enter first name!</string>
 </resources>
