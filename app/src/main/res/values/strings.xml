@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">NameManglerRevenge</string>
     <string name="no_first_name">Must enter first name!</string>
+    <string name="mangle_reset">Reset</string>
+    <string name="mangle_remangle">Re-mangle</string>
+
 </resources>
